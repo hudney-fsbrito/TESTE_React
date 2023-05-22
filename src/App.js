@@ -6,16 +6,21 @@ import Foto from "./assets/fone-embaçado.svg"
 
 function App() {
   return (
+    
     <div className="App bg-info">
-      <header className="App-header container  p-1">
+      <header className="App-header container  px-4">
 
-        <nav className='navbar container-fluid'>
-          <img className="Foto d-inline-block w-25" src={Foto} alt="" />
+        <nav className='navbar '>
+
+          <img className="Foto d-inline-block" src={Foto} alt="" />
+
           <button className="navbar-toggler btn bg-primary btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i className="bi bi-list "></i>
           </button>
+
           <div className="collapse navbar-collapse" id='navbarSupportedContent'>
-            <ul className="Menu-descricao">
+            <div className="d-flex justify-content-end ">
+            <ul className="Menu-descricao navbar-nav ">
               <a href="#sobre">
                 <li >About</li>
               </a>
@@ -26,16 +31,22 @@ function App() {
                 <li >Contact</li>
               </a>
             </ul>
+            </div>
           </div>
+          
         </nav>
       </header>
-      {/* <div>
+       {/* <div>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
+
           <div className="container-fluid">
+
             <a className="navbar-brand" href="#">Navbar</a>
+
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
+
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
@@ -59,14 +70,17 @@ function App() {
                   <a className="nav-link disabled">Disabled</a>
                 </li>
               </ul>
+
               <form className="d-flex" role="search">
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                   <button className="btn btn-outline-success" type="submit">Search</button>
               </form>
+
             </div>
           </div>
         </nav>
-      </div>*/}
+        
+      </div> */}
     </div>
   );
 }
